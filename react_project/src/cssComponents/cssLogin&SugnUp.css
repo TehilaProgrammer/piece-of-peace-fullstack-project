@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .local-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .demo {
+    width: 300px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .demo.s--switched .demo__inner {
+    transform: translateX(-100%);
+  }
+  
+  .demo__inner {
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease;
+  }
+  
+  .demo__forms {
+    width: 100%;
+  }
+  
+  .demo__form {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+  }
+  
+  .demo__form-content h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .demo__form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .demo__form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .demo__form button:hover {
+    background-color: #218838;
+  }
+  
+  .demo__switcher {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .demo__switcher-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .demo__switcher-btn-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .demo__switcher-btn span {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+  

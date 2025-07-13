@@ -1,0 +1,15 @@
+# Node modules
+react_project/node_modules/
+
+# Java compiled files
+java/target/
+*.class
+*.jar
+
+# IDE files
+.idea/
+*.iml
+
+# OS generated
+.DS_Store
+Thumbs.db

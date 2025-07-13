@@ -1,0 +1,125 @@
+
+nav {
+    background-color: #003580; 
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: fixed;  
+    top: 0;           
+    left: 0;          
+    width: 100%;    
+    z-index: 1000;   
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu span {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+ul.open {
+    display: block;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li a {
+    margin-right: 6vh;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+ul li button{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;  
+    border: #e6e4e400;
+    background-color: #fafaf900;
+}
+
+ul li a:hover {
+    color: #eeeded; 
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #003580;
+        width: 100%;
+        padding: 10px;
+    }
+
+    ul.open {
+        display: block;
+    }
+
+    ul li {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+ul li a:hover {
+    color: #f9f6f5;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+
+ul li a:active {
+    background-color: rgba(255, 255, 255, 0.4); 
+    color: #fafaf9;
+}
+
+ul li button:hover {
+    color: #f9f6f5;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+
+ul li button:active {
+    background-color: rgba(255, 255, 255, 0.4); 
+    color: #fafaf9;
+}
+
+

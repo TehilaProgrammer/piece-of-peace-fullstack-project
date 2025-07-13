@@ -1,0 +1,17 @@
+.MuiTypography-body1 {
+    font-size: 16px;
+  }
+  
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  
+  .MuiCard-root {
+    margin-bottom: 20px;
+  }
+  
+  .MuiGrid-item {
+    display: flex;
+    justify-content: center;
+  }
+  
